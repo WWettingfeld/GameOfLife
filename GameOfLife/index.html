@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Billeh's Game of Life</title>
+    <link href="index.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div class="world" data-bind="foreach: rows">
+        <div class="row" data-bind="foreach: cells">
+            <div class="cell" data-bind="click: $root.setAliveStatus, attr: { class: color }"></div>
+
+        </div>
+    </div>
+    <button id="runButton">Run!</button>
+</body>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/knockout/knockout-2.2.1.js"></script>
+<script src="index.js"></script>
+</html>
